@@ -9,7 +9,7 @@ function Home() {
       </div>
       <br />
       <div className="fixed-action-btn">
-        <a className="btn-floating btn-large red"><i className="large material-icons">Social Media</i></a>
+        <a className="btn-floating btn-large red"><i className="large material-icons">social_media</i></a>
         <ul>
           <li><a className="btn-floating red"><i className="material-icons">insert_chart</i></a></li>
           <li><a className="btn-floating yellow darken-1"><i className="material-icons">insert_chart</i></a></li>
