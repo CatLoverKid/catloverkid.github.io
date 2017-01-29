@@ -7,7 +7,7 @@ const propTypes = {
 function App({ children }) {
   return (
     <div>
-      <nav className="light-blue lighten-1" role="navigation">
+      <nav className="red lighten-1" role="navigation">
         <div className="nav-wrapper container"><a id="logo-container" href="#logo" className="brand-logo">Anthony Keba</a>
           <ul className="right hide-on-med-and-down">
             <li><a href="https://github.com/catloverkid">Github</a></li>
