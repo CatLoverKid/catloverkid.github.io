@@ -8,7 +8,7 @@ function App({ children }) {
   return (
     <div>
       <nav className="red lighten-1" role="navigation">
-        <div className="nav-wrapper container"><a id="logo-container" href="#logo" className="brand-logo">Anthony Keba</a>
+        <div className="nav-wrapper container"><a id="logo-container" href="/" className="brand-logo">Anthony Keba</a>
         </div>
       </nav>
 
