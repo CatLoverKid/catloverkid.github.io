@@ -1,0 +1,58 @@
+@import url('https://matiaslescano.com.ar/static/fonts/pixelicious.css');
+body {
+    background-color: #000;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 690px;
+}
+p {
+    font-family: Pixelicious, monospace;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: transparent;
+    filter: blur(0.3px);
+    animation: 2s ease-in-out infinite alternate pulse;
+}
+
+h1 {
+    font-family: Pixelicious, monospace;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #CF0671;
+    filter: blur(3px);
+    animation: 10s ease-in-out infinite alternate pulse, 8s ease-in-out infinite alternate blur;
+}
+
+
+@keyframes pulse {
+    0% {
+        text-shadow: rgba(255, 255, 255, .9) -0.06em -0.06em, rgba(67, 144, 126, .9) 0 0, 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
+    }
+    33% {
+        text-shadow: rgba(204, 255, 252, .9) -0.15em -0.15em, rgba(157, 94, 186, .9) 0 0, 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
+    }
+    66% {
+        text-shadow: rgba(229, 255, 254, .9) -0.06em -0.06em, rgba(157, 94, 186, .9) 0 0, 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
+    }
+    100% {
+        text-shadow: rgba(179, 255, 251, .9) -0.15em -0.15em, rgba(202, 69, 215, .9) 0 0, 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
+    }
+}
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    33% {
+        filter: blur(1px);
+    }
+    66% {
+        filter: blur(.2px);
+    }
+    100% {
+        filter: blur(3px);
+    }
+}
