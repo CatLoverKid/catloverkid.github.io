@@ -7,5 +7,8 @@ synthwaveButton.addEventListener("click", function(){
     link.rel = "stylesheet";
     link.media = "screen,print";
 
+    var audio = new Audio('songs/DeepCover.mp3');
+    audio.play();
+
     document.getElementsByTagName( "head" )[0].appendChild( link );
 });

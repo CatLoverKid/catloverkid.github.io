@@ -36,6 +36,7 @@ font-style: italic;
 .tinyText {
     margin-top: 25px;
     font-size: 2vh;
+    filter: blur(0.7px);
 }
 
 .titleText {
@@ -48,6 +49,11 @@ hr {
     display: block;
     margin-bottom: 7vh;
     border-color: rgba(0,0,0,0);
+}
+
+p {
+    filter: blur(0.7px);
+    font-family: VCR-OSD-MONO
 }
 
 #transitionButton {
