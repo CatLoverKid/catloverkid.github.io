@@ -1,4 +1,4 @@
-let synthwaveButton = document.getElementById("theyWannaSeeMyStuff");
+let synthwaveButton = document.getElementById("transitionButton");
 
 synthwaveButton.addEventListener("click", function(){
     var link = document.createElement( "link" );
