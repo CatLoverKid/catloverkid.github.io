@@ -1,4 +1,14 @@
-@import url('https://matiaslescano.com.ar/static/fonts/pixelicious.css');
+@font-face{
+    font-family: Pixelicious;
+    src: url(fonts/Pixelicious.ttf);
+}
+@font-face{
+    font-family: VCR-OSD-MONO;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
+
+
 body {
     background-color: #000;
 }
@@ -17,10 +27,8 @@ p {
     filter: blur(0.3px);
     animation: 2s ease-in-out infinite alternate pulse;
 }
-
 h1 {
-    font-family: Pixelicious, monospace;
-    font-size: 2em;
+    font-family: VCR-OSD-MONO, monospace;
     text-transform: uppercase;
     color: #CF0671;
     filter: blur(3px);
@@ -53,6 +61,6 @@ h1 {
         filter: blur(.2px);
     }
     100% {
-        filter: blur(3px);
+        filter: blur(1px);
     }
 }

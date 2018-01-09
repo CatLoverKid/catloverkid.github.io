@@ -3,17 +3,14 @@ body {
     color: #fff;
 }
 
-.jumbotron {
-    background-color: #122D3C;
+
+.tinyText {
+    margin-top: 25px;
+    font-size: 0.5em;
 }
 
-.thisOneIsReallyFuckingBashful {
-    font-size: 10px !important;
-}
-
-.ThatOneReallyBigTitle {
-    font-family: Impact;
-    font-size: 48px;
+.titleText {
+    font-size: 3em;
 }
 
 hr.gargantuan {
@@ -23,7 +20,7 @@ hr.gargantuan {
 }
 
 #theyWannaSeeMyStuff {
-    font-size: 25px;
+    font-size: 1em;
     color: white;
     background-color: #324D5C;
     border-width: 0;
@@ -47,12 +44,11 @@ body {
 	filter: blur(0.5px);
 	display: flex;
 	align-items: center;
+    text-align: center;
 	justify-content: center;
-	flex-direction: column;
 	background: linear-gradient(135deg, #5618a9 0%, #1c072e 100%);
-	font-size: 20px;
+	font-size: 30px;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
 	text-shadow: 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
 }
 
@@ -66,25 +62,26 @@ body:before {
 	right: 0;
 	height: 200%;
 	background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.25) 50%), linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.02), rgba(0,0,255,0.06));
-	z-index: 4;
+	z-index: 10;
 	background-size: 100% 5px, 3px 100%;
 	pointer-events: none;
 	animation-name: scanlines;
-	animation-duration: 20s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+}
 
-@-moz-keyframes scanlines {
+@keyframes scanlines {
 	0% {transform: translateY(0%);}
     100% {transform: translateY(-50%);}
 }
 
-@-webkit-keyframes scanlines {
+@keyframes scanlines {
 	0% {transform: translateY(0%);}
 	100% {transform: translateY(-50%);}
 }
 
-@-o-keyframes scanlines {
+@keyframes scanlines {
 	0% {transform: translateY(0%);}
 	100% {transform: translateY(-50%);}
 }
