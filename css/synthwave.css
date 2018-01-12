@@ -62,6 +62,7 @@ h1 {
 
 @keyframes pulse {
     0% {
+        transform: translateZ(0);
         text-shadow: rgba(255, 255, 255, .9) -0.06em -0.06em, rgba(67, 144, 126, .9) 0 0, 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
     }
     33% {
@@ -77,7 +78,7 @@ h1 {
 
 @keyframes skew {
     0%{
-        transform: rotateZ(0deg) scale(0.95, 0.95);
+        transform: rotateZ(0deg) scale(0.95, 0.95) translateZ();
         -webkit-animation-timing-function: ease-out;
     }
     25%{
