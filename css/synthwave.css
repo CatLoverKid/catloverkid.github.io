@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 @font-face{
     font-family: Pixelicious;
     src: url(fonts/Pixelicious.ttf);
@@ -7,41 +8,70 @@
     src: url(fonts/VCR_OSD_MONO_1.001.ttf);
 }
 @font-face {
-font-family: AlienEncounters;
-src: url(fonts/Alien-Encounters-Regular.ttf);
-font-weight: normal;
-font-style: normal;
+    font-family: AlienEncounters;
+    src: url(fonts/Alien-Encounters-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-font-family: AlienEncounters;
-src: url(fonts/Alien-Encounters-Italic.ttf);
-font-weight: normal;
-font-style: italic;
+    font-family: AlienEncounters;
+    src: url(fonts/Alien-Encounters-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
 }
 @font-face {
-font-family: AlienEncounters;
-src: url(fonts/Alien-Encounters-Bold.ttf);
-font-weight: bold;
-font-style: normal;
+    font-family: AlienEncounters;
+    src: url(fonts/Alien-Encounters-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 @font-face {
-font-family: AlienEncounters;
-src: url(fonts/Alien-Encounters-Bold-Italic.ttf);
-font-weight: bold;
-font-style: italic;
+    font-family: AlienEncounters;
+    src: url(fonts/Alien-Encounters-Bold-Italic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
 
 
+
+
+* {
+	box-sizing: border-box;
+}
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
 body {
-    background-color: #000;
+	filter: blur(0.5px);
+	display: flex;
+	align-items: center;
+    text-align: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #782ae0 0%, #120121 100%);
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 5px 0 3px rgba(251,0,231,0.5), 0 5px 3px rgba(0,233,235,0.5), -5px 0 3px rgba(0,242,14,0.5), 0 -5px 3px rgba(244,45,0,0.8), 5px 0 3px rgba(59,0,226,0.5);
 }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    max-width: 690px;
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 200%;
+	background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.25) 50%), linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.02), rgba(0,0,255,0.06));
+	z-index: 10;
+	background-size: 100% 5px, 3px 100%;
+	pointer-events: none;
+	animation-name: scanlines;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 p {
     font-family: Pixelicious, monospace;
@@ -49,14 +79,24 @@ p {
     text-transform: uppercase;
     color: transparent;
     filter: blur(0.7px);
-    animation: 2s ease-in-out infinite alternate pulse;
+    animation:
+    2s ease-in-out infinite alternate pulse;
 }
 h1 {
     font-family: VCR-OSD-MONO, monospace;
     text-transform: uppercase;
     color: #CF0671;
-    filter: blur(3px);
-    animation: 3s ease-in-out infinite alternate pulse, 10s infinite skew;
+    filter: blur(1px);
+    animation:
+    3s ease-in-out infinite alternate pulse,
+    10s infinite skew;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    max-width: 690px;
 }
 
 
@@ -78,7 +118,7 @@ h1 {
 
 @keyframes skew {
     0%{
-        transform: rotateZ(0deg) scale(0.95, 0.95) translateZ();
+        transform: rotateZ(0deg) scale(0.95, 0.95) translateZ(0);
         -webkit-animation-timing-function: ease-out;
     }
     25%{
@@ -97,4 +137,32 @@ h1 {
         transform: rotateZ(0deg) scale(0.95, 0.95);
         -webkit-animation-timing-function: ease-out;
     }
+}
+
+@keyframes scanlines {
+	0% {transform: translateY(0%);}
+    100% {transform: translateY(-50%);}
+}
+
+.blackBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.phoneSpanHelper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.phoneContainer {
+    position: absolute;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+.introPhone {
+    height: 30vh;
 }
