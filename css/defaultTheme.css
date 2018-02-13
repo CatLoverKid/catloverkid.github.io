@@ -32,3 +32,34 @@
     font-weight: bold;
     font-style: italic;
 }
+
+
+
+.blackBackground {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.gridWrapper {
+    font-family: mr-sandsfort, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+
+.gridBox {
+    font-family: mr-sandsfort, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
