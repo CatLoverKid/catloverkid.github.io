@@ -32,33 +32,31 @@
                 defaultTheme.cssLink.href = "css/defaultTheme.css";
                 defaultTheme.cssLink.type = "text/css";
                 defaultTheme.cssLink.rel = "stylesheet";
-                defaultTheme.cssLink.media = "screen,print";
                 $("#masterContainer").empty().append(
-                    $("<div/>").addClass("row").append(
-                        $("<div/>").addClass("col-lg-12").append(
-                            $("<div/>").addClass("gridWrapper").append(
-                                $("<div/>").addClass("gridBox BoxA").append(
-                                    "Test1"
-                                )
-                            ).append(
-                                $("<div/>").addClass("gridBox BoxB").append(
-                                    "Test2"
-                                )
-                            ).append(
-                                $("<div/>").addClass("gridBox BoxC").append(
-                                    "Test3"
-                                )
-                            ).append(
-                                $("<div/>").addClass("gridBox BoxD").append(
-                                    "Test4"
-                                )
-                            ).append(
-                                $("<div/>").addClass("gridBox BoxE").append(
-                                    "Test5"
-                                )
-                            )
+                    $("<div/>").addClass("gridWrapper").append(
+                        $("<h1/>").append(
+                            "ANTHONY KEBA"
+                        )
+                    ).append(
+                        $("<div/>").append(
+                            "And his meanderings through the Universe"
+                        )
+                    ).append(
+                        $("<div/>").addClass("gridBox BoxC").append(
+                            "Hyperloop"
+                        )
+                    ).append(
+                        $("<div/>").addClass("gridBox BoxD").append(
+                            "School"
+                        )
+                    ).append(
+                        $("<div/>").addClass("gridBox BoxE").append(
+                            "Side Projects"
                         )
                     )
+                    .append($("<div/>"))
+                    .append($("<div/>"))
+                    .append($("<div/>"))
                 )
                 document.getElementsByTagName( "head" )[0].appendChild( defaultTheme.cssLink );
             }
