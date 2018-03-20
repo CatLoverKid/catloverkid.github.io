@@ -2,7 +2,7 @@
 (() => {
 
     let synthwave = {
-            phoneRingAudio: new Audio('assets/phone.mp3'),
+            //phoneRingAudio: new Audio('assets/phone.mp3'),
             cssLink: document.createElement( "link" ),
             init: () => {
                 synthwave.cssLink.href = "css/synthwave.css";
@@ -21,7 +21,7 @@
                     )
                 )
                 document.getElementsByTagName( "head" )[0].appendChild( synthwave.cssLink );
-                synthwave.phoneRingAudio.loop = true;
+                //synthwave.phoneRingAudio.loop = true;
                 //synthwave.phoneRingAudio.play();
             }
         };
