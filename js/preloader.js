@@ -12,17 +12,20 @@
 
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
-                        $("<img/>").attr({
-                            src: '../assets/phoneBaseTEMP.png',
-                            class: 'introPhone'
-                        })
                     ).append(
-                        $("<h1/>").append("S Y N T H W A V E")
+                        $("<h1/>").append("A D D")
+                    ).append($("<br>")).append(
+                        $("<h1/>").append("M O R E")
+                    ).append($("<br>")).append(
+                        $("<h1/>").append("D U D E S")
                     )
-                )
+                ).append($("<canvas>").attr(
+                    "id", "synthwaveTerrain")
+                );
+                let terrainCanvas = document.getElementById("synthwaveTerrain");
+                let cd = terrainCanvas.getContext("2d");
+
                 document.getElementsByTagName( "head" )[0].appendChild( synthwave.cssLink );
-                //synthwave.phoneRingAudio.loop = true;
-                //synthwave.phoneRingAudio.play();
             }
         };
 
@@ -62,5 +65,5 @@
             }
         }
 
-    window.preloadingModule = defaultTheme;
+    window.preloadingModule = synthwave;
 })();

@@ -5,7 +5,7 @@ synthwaveButton.addEventListener("click", function(){
     link.href = "css/synthwave.css";
     link.type = "text/css";
     link.rel = "stylesheet";
-    link.media = "screen,print";
+    link.media = "screen, print";
 
     document.getElementsByTagName( "head" )[0].appendChild( link );
 });
