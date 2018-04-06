@@ -13,11 +13,11 @@
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
                     ).append(
-                        $("<h1/>").append("A D D")
+                        $("<h1/>").append("DONNIE DARKO")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("M O R E")
+                        $("<h1/>").append("MAKES NO")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("D U D E S")
+                        $("<h1/>").append("FUCKING SENSE")
                     )
                 ).append($("<canvas>").attr(
                     "id", "synthwaveTerrain")
