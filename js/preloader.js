@@ -13,11 +13,11 @@
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
                     ).append(
-                        $("<h1/>").append("DONNIE DARKO")
+                        $("<h1/>").append("WHY DO I KEEP UPDATING THIS")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("MAKES NO")
+                        $("<h1/>").append("NOBODY CHECKS IT ANYMORE")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("FUCKING SENSE")
+                        $("<h1/>").append("IT'S JUST A SOLILIQUY")
                     )
                 ).append($("<canvas>").attr(
                     "id", "synthwaveTerrain")
