@@ -13,11 +13,9 @@
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
                     ).append(
-                        $("<h1/>").append("WHY DO I KEEP UPDATING THIS")
+                        $("<h1/>").append("UNDER CONSTRUCTION")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("NOBODY CHECKS IT ANYMORE")
-                    ).append($("<br>")).append(
-                        $("<h1/>").append("IT'S JUST A SOLILIQUY")
+                        $("<h1/>").append("FOR NOW, ENJOY THE VIEW")
                     )
                 ).append($("<canvas>").attr(
                     "id", "synthwaveTerrain")
