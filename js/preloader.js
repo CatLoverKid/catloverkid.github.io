@@ -13,11 +13,11 @@
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
                     ).append(
-                        $("<h1/>").append("UH OH, YOU'RE NOT SUPPOSED TO BE HERE")
+                        $("<h1/>").append("MY DUDES")
                     ).append(
-                        $("<h1/>").append("THIS WEBSITE IS UNDER CONSTRUCTION")
+                        $("<h1/>").append("IT IS TIME")
                     ).append($("<br>")).append(
-                        $("<h1/>").append("OH WELL, FOR NOW, ENJOY THE VIEW")
+                        $("<h1/>").append("FOR FOOD")
                     )
                 ).append($("<canvas>").attr(
                     "id", "synthwaveTerrain")
