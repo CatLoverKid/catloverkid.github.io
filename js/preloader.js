@@ -13,17 +13,10 @@
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
                     ).append(
-                        $("<h1/>").append("MY DUDES")
+                        $("<h1/>").append("SITE IS CURRENTLY")
                     ).append(
-                        $("<h1/>").append("IT IS TIME")
-                    ).append($("<br>")).append(
-                        $("<h1/>").append("FOR FOOD")
+                        $("<h1/>").append("DOWN FOR MAINTENANCE")
                     )
-                ).append($("<canvas>").attr(
-                    "id", "synthwaveTerrain")
-                );
-                let terrainCanvas = document.getElementById("synthwaveTerrain");
-                let cd = terrainCanvas.getContext("2d");
 
                 document.getElementsByTagName( "head" )[0].appendChild( synthwave.cssLink );
             }
