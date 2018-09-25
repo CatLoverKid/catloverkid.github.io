@@ -15,6 +15,8 @@
                         $("<h1/>").append("SITE IS CURRENTLY")
                     ).append(
                         $("<h1/>").append("DOWN FOR MAINTENANCE")
+                    ).append(
+                        $("<h1/>").append("COME BACK LATER")
                     )
                 )
                 document.getElementsByTagName( "head" )[0].appendChild( synthwave.cssLink );
