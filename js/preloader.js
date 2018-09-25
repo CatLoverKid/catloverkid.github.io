@@ -12,12 +12,11 @@
 
                 $("#masterContainer").empty().append(
                     $("<div/>").append(
-                    ).append(
                         $("<h1/>").append("SITE IS CURRENTLY")
                     ).append(
                         $("<h1/>").append("DOWN FOR MAINTENANCE")
                     )
-
+                )
                 document.getElementsByTagName( "head" )[0].appendChild( synthwave.cssLink );
             }
         };
