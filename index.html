@@ -12,17 +12,28 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/preloader.js"></script>
+    <!-- <script src="js/preloader.js"></script> -->
     <link href="css/style.css" type="text/css" rel="stylesheet" /> <!--main CSS Document-->
+    <link href="css/synthwave.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <main>
         <header id="root">
             <div id="masterContainer">
-
+              <h1>SITE IS CURRENTLY</h1>
+              <h1>DOWN FOR MAINTENANCE</h1>
+              <h1>COME BACK LATER</h1>
             </div>
         </header>
+        <div>
+          <button onclick="document.getElementById('musicPlayer').play()" id="playButton">
+            <p id="buttonText">Play</p>
+          </button>
+          <audio controls autoplay loop id="musicPlayer">
+            <source src="assets/songs/song.mp3" type="audio/mpeg">
+          </audio>
+        </div>
     </main>
-<script>window.preloadingModule.init()</script>
+<!-- <script>window.preloadingModule.init()</script> -->
 </body>
 </html>
